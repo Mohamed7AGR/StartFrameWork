@@ -1,0 +1,33 @@
+@import "flowbite/src/themes/default";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* منع CLS */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* أبعاد ثابتة للصور */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@layer components {
+  .icon-left {
+    @apply after:h-1 after:w-20 after:absolute after:top-3 after:end-10;
+  }
+  .icon-right {
+    @apply before:h-1 before:w-20 before:absolute before:top-3 before:left-10;
+  }
+}
+
+.active {
+  background-color: #1abc9c;
+  color: white;
+}

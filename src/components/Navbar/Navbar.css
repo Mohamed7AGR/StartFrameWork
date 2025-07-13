@@ -1,0 +1,12 @@
+:root {
+    --primary-color: #2ebc9c;
+    --secondary-color: #f7f7f7;
+    --bg-dark-color: #2f3d4f;
+  }
+  .active {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 8px 16px;
+    width: fit-content;
+  }
+  
